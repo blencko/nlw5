@@ -2,10 +2,11 @@ import React from 'react';
 import {SafeAreaView, View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
 
 import wateringImg from '../assets/watering.png';
+import { Button } from '../components/Button';
 import colors from '../styles/colors';
 
 export function Welcome(){
-    return(
+     return(
         <SafeAreaView style={style.container}>
             <Text style={style.title}>
                 Gerencie {'\n'}
@@ -17,15 +18,9 @@ export function Welcome(){
                 Não esqueça mais de regar suas plantas. Nós cuidaremos de lembrar você sempre que 
                 precisar.
             </Text>
-            <TouchableOpacity style={style.button}>
-                <Text style={style.buttonText}>
-                    >
-                </Text>
-            </TouchableOpacity>
-
+            <Button titile = ">>" />
         </SafeAreaView>
     )
-
 }
 
 const style = StyleSheet.create({
@@ -48,20 +43,5 @@ const style = StyleSheet.create({
         paddingHorizontal:20,
         color:colors.heading
 
-    },
-    button:{
-        backgroundColor:colors.green,
-        justifyContent:"center",
-        alignItems:"center",
-        borderRadius:16,
-        marginBottom:60,
-        height:60,
-        width:60,
-        
-
-    },
-    buttonText:{
-        fontSize:24
     }
-
 })
