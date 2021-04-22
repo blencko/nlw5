@@ -40,7 +40,8 @@ const style = StyleSheet.create({
         textAlign:"center",
         color: colors.heading,
         marginTop:120,
-        fontFamily:fonts.heading
+        fontFamily:fonts.heading,
+        lineHeight:38
     },
     sub:{
         textAlign:"center",
